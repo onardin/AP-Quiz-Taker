@@ -1,0 +1,16 @@
+quiz_title="Subshells & Process Substitution"
+quiz_questions=(
+    "Which pair of characters is used to run commands in a subshell?"
+    "Write the modern command‑substitution syntax (two characters surrounding …)."
+    "In process substitution, what two‑character sequence begins the substitution used in 'diff <(sort A) <(sort B)' ?"
+    "Does variable assignment inside a subshell affect that variable in the parent shell? (yes/no)"
+    "Which builtin replaces the current shell process with another program, rather than forking?"
+)
+
+quiz_answers=(
+    "()"
+    "$()"
+    "<("
+    "no"
+    "exec"
+)

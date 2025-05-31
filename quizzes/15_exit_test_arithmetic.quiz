@@ -1,0 +1,16 @@
+quiz_title="Exit Status, Test & Arithmetic Evaluation"
+quiz_questions=(
+    "What integer exit status indicates success?"
+    "Inside [[ ]], which operator tests for string inequality?"
+    "Arithmetic evaluation to increment variable x by one."
+    "Numeric comparison flag for 'greater‑than or equal' inside [ ] test."
+    "Which special parameter holds the exit status of the last command?"
+)
+
+quiz_answers=(
+    "0"
+    "!="
+    "((x++))"
+    "-ge"
+    "$?"
+)

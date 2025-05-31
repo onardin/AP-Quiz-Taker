@@ -1,0 +1,16 @@
+quiz_title="Advanced Parameter Expansion"
+quiz_questions=(
+    "Expand variable 'foo' to all uppercase characters."
+    "Remove the shortest suffix matching '*.log' from variable 'fname'."
+    "Provide default value 'N/A' when variable 'x' is null or unset."
+    "What expansion gives the length of variable 'msg'?"
+    "Replace the first occurrence of 'cat' with 'dog' in variable 'str'."
+)
+
+quiz_answers=(
+    "${foo^^}"
+    "${fname%.log}"
+    "${x:-N/A}"
+    "${#msg}"
+    "${str/cat/dog}"
+)

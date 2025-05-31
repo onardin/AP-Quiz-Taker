@@ -1,0 +1,16 @@
+quiz_title="Arrays & Associative Arrays"
+quiz_questions=(
+    "Declare an **associative** array named 'colors'."
+    "Append element 42 to indexed array 'nums'."
+    "Expand to all keys of associative array 'map'."
+    "Which expansion lists all indices of array 'a' ?"
+    "Command to remove only element 2 of array 'arr'."
+)
+
+quiz_answers=(
+    "declare -A colors"
+    "nums+=(42)"
+    "${!map[@]}"
+    "${!a[@]}"
+    "unset 'arr[2]'"
+)

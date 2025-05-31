@@ -1,0 +1,16 @@
+quiz_title="Special Permission Bits"
+quiz_questions=(
+    "Which permission bit makes a directory so that only its owner can delete or rename files inside it, even if others have write permission?"
+    "Symbolic chmod needed to add setuid to an executable file (use letters only)"
+    "What octal chmod value corresponds to rwxr-sr-x ?"
+    "When ls -l shows permissions '-rwsr-xr-x', which special bit is set?"
+    "In numeric mode, which leading digit turns both setuid and setgid on while leaving sticky off?"
+)
+
+quiz_answers=(
+    "sticky bit"
+    "u+s"
+    "2755"
+    "setuid"
+    "6"
+)

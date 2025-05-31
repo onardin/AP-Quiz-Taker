@@ -1,0 +1,16 @@
+quiz_title="Functions & Scope"
+quiz_questions=(
+    "Begin a function definition named 'foo' (type only the first line)."
+    "Keyword that creates function‑local variables."
+    "Return status 42 from within a Bash function."
+    "If a function echoes text with no redirection, to which stream does it go by default?"
+    "Which command can export a function definition to child shells?"
+)
+
+quiz_answers=(
+    "foo() {"
+    "local"
+    "return 42"
+    "stdout"
+    "export -f"
+)
