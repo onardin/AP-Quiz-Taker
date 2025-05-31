@@ -10,7 +10,7 @@ quiz_questions=(
 quiz_answers=(
     "$"
     "readonly"
-    "$#"
+    "\$#"
     "PATH"
     "EOF"
 )
