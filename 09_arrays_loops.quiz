@@ -1,0 +1,16 @@
+quiz_title="Arrays & Loops in Bash"
+quiz_questions=(
+    "Declare an indexed array named 'nums' (command keyword)"
+    "Print all elements of array 'nums' as separate words"
+    "Print number of elements in array 'nums'"
+    "Arithmetic expansion syntax used to add variables a and b"
+    "Token that expands to all remaining positional arguments inside a loop"
+)
+
+quiz_answers=(
+    "declare -a"
+    "${nums[@]}"
+    "${#nums[@]}"
+    "$(( a + b ))"
+    "$@"
+)

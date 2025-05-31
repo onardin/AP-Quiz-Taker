@@ -1,0 +1,16 @@
+quiz_title="Navigation & Paths"
+quiz_questions=(
+    "Print the current working directory (command only)"
+    "Change to the parent directory"
+    "What shortcut character represents your home directory in paths?"
+    "List directory contents in long form"
+    "Change to the previous working directory"
+)
+
+quiz_answers=(
+    "pwd"
+    "cd .."
+    "~"
+    "ls -l"
+    "cd -"
+)

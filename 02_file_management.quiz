@@ -1,0 +1,16 @@
+quiz_title="File Management Basics"
+quiz_questions=(
+    "Which command copies files?"
+    "Which command moves or renames files?"
+    "Which command removes an empty directory?"
+    "Which command removes files or directories recursively?"
+    "Which command updates a file's timestamp or creates it if missing?"
+)
+
+quiz_answers=(
+    "cp"
+    "mv"
+    "rmdir"
+    "rm -r"
+    "touch"
+)

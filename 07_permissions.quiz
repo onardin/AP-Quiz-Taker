@@ -1,0 +1,16 @@
+quiz_title="File Permissions & chmod"
+quiz_questions=(
+    "3‑digit chmod value for rwxrwxrwx"
+    "Symbolic permissions string for 755"
+    "3‑digit chmod value for rw-r--r--"
+    "Add write permission for group on a file (chmod flags only)"
+    "Hidden files begin with which character?"
+)
+
+quiz_answers=(
+    "777"
+    "rwxr-xr-x"
+    "644"
+    "g+w"
+    "."
+)

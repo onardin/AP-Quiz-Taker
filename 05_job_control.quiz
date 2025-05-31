@@ -1,0 +1,16 @@
+quiz_title="Job Control"
+quiz_questions=(
+    "Character appended to run a command in the background"
+    "Command to list all background jobs"
+    "Bring the most recent background job to the foreground"
+    "Key combination to suspend the foreground job"
+    "Key combination to terminate the foreground job"
+)
+
+quiz_answers=(
+    "&"
+    "jobs"
+    "fg"
+    "ctrl+z"
+    "ctrl+c"
+)

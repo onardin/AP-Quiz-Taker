@@ -1,0 +1,16 @@
+quiz_title="getopts & Argument Parsing"
+quiz_questions=(
+    "Which built‑in Bash command parses option flags?"
+    "Variable that stores index of next argument after getopts"
+    "Leading character in an optstring that suppresses internal error messages"
+    "In the optstring ':n:' what does the trailing colon after 'n' signify?"
+    "Command used to shift positional arguments after getopts loop"
+)
+
+quiz_answers=(
+    "getopts"
+    "OPTIND"
+    ":"
+    "argument required"
+    "shift"
+)

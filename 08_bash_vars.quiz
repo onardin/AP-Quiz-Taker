@@ -1,0 +1,16 @@
+quiz_title="Bash Variables & Constants"
+quiz_questions=(
+    "Prefix used to read a variable's value in Bash"
+    "Built‑in keyword to mark a variable read‑only"
+    "Special parameter that stores the number of positional args"
+    "Which environment variable lists directories searched for user commands?"
+    "In a here document, which token ends the block in 'cat << EOF ... EOF'?"
+)
+
+quiz_answers=(
+    "$"
+    "readonly"
+    "$#"
+    "PATH"
+    "EOF"
+)

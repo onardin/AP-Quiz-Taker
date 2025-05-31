@@ -1,0 +1,16 @@
+quiz_title="Viewing Files"
+quiz_questions=(
+    "Display contents of a file to the terminal"
+    "Show contents with pagination and scrolling"
+    "View first 10 lines of a file"
+    "View last 10 lines of a file"
+    "Show file contents in printable character format (octal dump) – command and option"
+)
+
+quiz_answers=(
+    "cat"
+    "less"
+    "head"
+    "tail"
+    "od -c"
+)

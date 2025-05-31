@@ -1,0 +1,16 @@
+quiz_title="I/O Redirection & Pipes"
+quiz_questions=(
+    "Overwrite a file with command output: which symbol?"
+    "Append output to the end of a file: which symbol?"
+    "Pipe stdout of one command into stdin of another: which symbol?"
+    "Redirect stdout of a command to stderr (operator to place after command)"
+    "Read input for a command from a file: which symbol?"
+)
+
+quiz_answers=(
+    ">"
+    ">>"
+    "|"
+    ">&2"
+    "<"
+)
