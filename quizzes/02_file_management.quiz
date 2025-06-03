@@ -1,18 +1,22 @@
 quiz_title="File Management Basics"
 quiz_questions=(
     "Which command copies files?"
+    "How can you recursively copy directories?"
     "Which command moves or renames files?"
     "Which command removes an empty directory?"
     "Which command makes a new directory?"
     "Which command removes files or directories recursively?"
     "Which command updates a file's timestamp or creates it if missing?"
+    "Which command lists contents of directories in a tree-like format?"
 )
 
 quiz_answers=(
     "cp"
+    "cp -r"
     "mv"
     "rmdir"
     "mkdir"
     "rm -r"
     "touch"
+    "tree"
 )
