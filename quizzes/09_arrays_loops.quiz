@@ -9,8 +9,8 @@ quiz_questions=(
 
 quiz_answers=(
     "declare -a"
-    "${nums[@]}"
-    "${#nums[@]}"
-    "$(( a + b ))"
-    "$@"
+    "\${nums[@]}"
+    "\${#nums[@]}"
+    "\$(( a + b ))"
+    "\$@"
 )
