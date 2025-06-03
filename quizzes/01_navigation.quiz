@@ -2,15 +2,19 @@ quiz_title="Navigation & Paths"
 quiz_questions=(
     "Print the current working directory (command only)"
     "Change to the parent directory"
+    "What character represents the current directory?"
     "What shortcut character represents your home directory in paths?"
     "List directory contents in long form"
+    "List all directory contents, including hidden files"
     "Change to the previous working directory"
 )
 
 quiz_answers=(
     "pwd"
     "cd .."
+    "."
     "~"
     "ls -l"
+    "ls -a"
     "cd -"
 )
