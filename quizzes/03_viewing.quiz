@@ -1,16 +1,20 @@
 quiz_title="Viewing Files"
 quiz_questions=(
+    "Print arguments to the terminal"
     "Display contents of a file to the terminal"
     "Show contents with pagination and scrolling"
     "View first 10 lines of a file"
     "View last 10 lines of a file"
     "Show file contents in printable character format (octal dump) – command and option"
+    "Command to clear the terminal"
 )
 
 quiz_answers=(
+    "echo"
     "cat"
     "less"
     "head"
     "tail"
     "od -c"
+    "clear"
 )
