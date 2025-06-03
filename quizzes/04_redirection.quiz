@@ -5,6 +5,8 @@ quiz_questions=(
     "Pipe stdout of one command into stdin of another: which symbol?"
     "Redirect stdout of a command to stderr (operator to place after command)"
     "Read input for a command from a file: which symbol?"
+    "Where would you redirect output so that it is discarded?"
+    "What is the name of the utility that can write its input to the screen and a file simultaneously?"
 )
 
 quiz_answers=(
@@ -13,4 +15,6 @@ quiz_answers=(
     "|"
     ">&2"
     "<"
+    "/dev/null"
+    "tee"
 )
