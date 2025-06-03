@@ -7,6 +7,14 @@ quiz_questions=(
     "List directory contents in long form"
     "List all directory contents, including hidden files"
     "Change to the previous working directory"
+    "What is the file path that contains essential user binaries?"
+    "What is the file path that contains special files that represent devices, including virtual devices?"
+    "What is the home directory of the users?"
+    "What is the root user in Linux?"
+    "What is the home directory of the root user?"
+    "What character represents the filesystem root?"
+    "What directory stores temporary application files?"
+    "What directory contains applications and files used by users?"
 )
 
 quiz_answers=(
@@ -17,4 +25,12 @@ quiz_answers=(
     "ls -l"
     "ls -a"
     "cd -"
+    "/bin"
+    "/dev"
+    "/home"
+    "superuser"
+    "/root"
+    "/"
+    "/tmp"
+    "/usr"
 )
