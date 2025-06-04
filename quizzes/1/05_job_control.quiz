@@ -8,7 +8,9 @@ quiz_questions=(
     "Key combination to suspend the foreground job"
     "Key combination to terminate the foreground job"
     "Move suspended job to the background"
-    "Character used to select a job by ID"
+    "Character used to select a job by index"
+    "Signal name (not number) sent by 'kill -9'."
+    "Default signal sent by 'kill PID' with no options."
 )
 
 quiz_answers=(
@@ -21,4 +23,6 @@ quiz_answers=(
     "ctrl+c"
     "bg"
     "%"
+    "SIGKILL"
+    "SIGTERM"
 )
