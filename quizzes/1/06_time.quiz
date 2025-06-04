@@ -1,7 +1,6 @@
 quiz_title="Measuring Time"
 quiz_questions=(
     "Command that measures execution time of a program"
-    "Calendar time since 1970‑01‑01 00:00:00 UTC is called the _____"
     "In 'time' output, which label shows user‑mode CPU time?"
     "In 'time' output, which label shows kernel‑mode CPU time?"
     "In 'time' output, which label shows wall‑clock time?"
@@ -9,7 +8,6 @@ quiz_questions=(
 
 quiz_answers=(
     "time"
-    "epoch"
     "user"
     "sys"
     "real"
