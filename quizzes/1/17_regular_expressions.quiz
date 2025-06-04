@@ -6,6 +6,7 @@ quiz_questions=(
 	"Regex for matching all non-hidden files/directories within the first positional argument"
 	"Regex for matching all hidden files/directories within the first positional argument"
 	"Regex for matching all hudden files/directories that start with '..' within the first positional argument"
+	"Remove the .zip extension from gcd.zip and assign it to the variable base"
 )
 
 quiz_answers=(
@@ -15,4 +16,5 @@ quiz_answers=(
 	'"$1"/*'
 	'"$1"/.[!.]*'
 	'"$1"/..?*'
+	"base=${gcd%.*}"
 )
