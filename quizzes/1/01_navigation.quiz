@@ -34,5 +34,5 @@ quiz_answers=(
     "/"
     "/tmp"
     "/usr"
-    "$PATH"
+    "\$PATH"
 )
