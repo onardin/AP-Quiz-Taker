@@ -5,6 +5,7 @@ quiz_questions=(
     "Special parameter that stores the number of positional args"
     "Which environment variable lists directories searched for user commands?"
     "In a here document, which token ends the block in 'cat << EOF ... EOF'?"
+    "What operator feeds a literal string as stdin to a command (here‑string)?"
 )
 
 quiz_answers=(
@@ -13,4 +14,5 @@ quiz_answers=(
     "\$#"
     "PATH"
     "EOF"
+    "<<<"
 )
