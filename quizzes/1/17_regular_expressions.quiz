@@ -1,0 +1,18 @@
+quiz_title="Regular Expressions"
+quiz_questions=(
+	"Symbol used for matching 0 or more characters"
+	"Symbol used for matching at least 1 character"
+	"Syntax for matching any character except x"
+	"Regex for matching all non-hidden files/directories within the first positional argument"
+	"Regex for matching all hidden files/directories within the first positional argument"
+	"Regex for matching all hudden files/directories that start with '..' within the first positional argument"
+)
+
+quiz_answers=(
+	"*"
+	"?"
+	"[!x]"
+	'"$1"/*'
+	'"$1"/.[!.]*'
+	'"$1"/..?*'
+)
