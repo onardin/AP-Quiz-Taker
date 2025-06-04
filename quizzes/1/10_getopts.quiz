@@ -5,6 +5,8 @@ quiz_questions=(
     "Leading character in an optstring that suppresses internal error messages"
     "In the optstring ':n:' what does the trailing colon after 'n' signify?"
     "Command used to shift positional arguments after getopts loop"
+    "Character used to catch any flags not specified in the optstring"
+    "Variable in the getopts loop indicating which flag was provided"
 )
 
 quiz_answers=(
@@ -13,4 +15,6 @@ quiz_answers=(
     ":"
     "argument required"
     "shift"
+    "?"
+    "OPTARG"
 )
