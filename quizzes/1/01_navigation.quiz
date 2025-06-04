@@ -15,7 +15,6 @@ quiz_questions=(
     "What character represents the filesystem root?"
     "What directory stores temporary application files?"
     "What directory contains applications and files used by users?"
-    "Where does the shell search for user commands?"
 )
 
 quiz_answers=(
@@ -34,5 +33,4 @@ quiz_answers=(
     "/"
     "/tmp"
     "/usr"
-    "\$PATH"
 )
