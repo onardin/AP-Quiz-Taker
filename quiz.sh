@@ -70,18 +70,20 @@ run_quiz() {
 
 # ---------- Main routine -------------------------------------
 
-if [[ ! -d "$QUIZ_DIR" ]]; then
-  echo "Error: quiz directory \"$QUIZ_DIR\" not found." >&2
+read -r -p "Enter the Quiz you are studying for (1-6) : " resp
+
+if [[ ! -d "$QUIZ_DIR/$resp" ]]; then
+  echo "Error: quiz directory \"$QUIZ_DIR/$resp\" not found." >&2
   exit 1
 fi
 
-mapfile -t quiz_files < <(find "$QUIZ_DIR" -type f -name '*.quiz' | sort)
+mapfile -t quiz_files < <(find "$QUIZ_DIR/$resp" -type f -name '*.quiz' | sort)
 if (( ${#quiz_files[@]} == 0 )); then
-  echo "No quiz files (*.quiz) found inside \"$QUIZ_DIR\"." >&2
+  echo "No quiz files (*.quiz) found inside \"$QUIZ_DIR/$resp\"." >&2
   exit 1
 fi
 
-echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR'."
+echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$resp'."
 
 for quiz_file in "${quiz_files[@]}"; do
   # shellcheck source=/dev/null
