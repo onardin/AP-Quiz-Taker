@@ -69,7 +69,7 @@ run_quiz() {
 }
 
 # ---------- Main routine -------------------------------------
-
+echo
 read -r -p "Enter the Quiz you are studying for (1-6) : " resp
 curr_quiz="$resp"
 
@@ -84,7 +84,7 @@ if (( ${#quiz_files[@]} == 0 )); then
   exit 1
 fi
 
-echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$curr_quiz'."
+echo -e "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$curr_quiz'.\n"
 
 read -r -p "Press <Enter> to take all quizzes or 'g' to choose a quiz: " resp
 goto_flag=0
@@ -95,7 +95,9 @@ esac
 
 if [[ $goto_flag -gt 0 ]]; then
   while true; do
+    printf '\n--- Quiz Directory ---\n'
     ls "$QUIZ_DIR/$curr_quiz"
+    echo
     read -r -p "Enter selected quiz or press 'q' to quit: " input
   
     if [[ "$input" == "q" ]]; then
