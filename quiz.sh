@@ -95,7 +95,7 @@ esac
 
 if [[ $goto_flag -gt 0 ]]; then
   while true; do
-    printf '\n--- Quiz Directory ---\n'
+    printf '\n--- Quiz Directory ---\n\n'
     ls "$QUIZ_DIR/$curr_quiz"
     echo
     read -r -p "Enter selected quiz or press 'q' to quit: " input
