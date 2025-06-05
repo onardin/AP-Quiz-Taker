@@ -103,7 +103,7 @@ if [[ $goto_flag -gt 0 ]]; then
       exit 0
     else
       unset -v quiz_title quiz_questions quiz_answers
-      source "$input" || { echo "Failed to source '$input' – select a different quiz." >&2; continue; }
+      source "$QUIZ_DIR/$curr_quiz/$input" || { echo "Failed to source '$input' – select a different quiz." >&2; continue; }
 
       if [[ -z ${quiz_title-} || ${#quiz_questions[@]} -eq 0 || \
             ${#quiz_questions[@]} -ne ${#quiz_answers[@]} ]]; then
