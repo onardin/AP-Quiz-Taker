@@ -71,42 +71,77 @@ run_quiz() {
 # ---------- Main routine -------------------------------------
 
 read -r -p "Enter the Quiz you are studying for (1-6) : " resp
+curr_quiz="$resp"
 
-if [[ ! -d "$QUIZ_DIR/$resp" ]]; then
-  echo "Error: quiz directory \"$QUIZ_DIR/$resp\" not found." >&2
+if [[ ! -d "$QUIZ_DIR/$curr_quiz" ]]; then
+  echo "Error: quiz directory \"$QUIZ_DIR/$curr_quiz\" not found." >&2
   exit 1
 fi
 
-mapfile -t quiz_files < <(find "$QUIZ_DIR/$resp" -type f -name '*.quiz' | sort)
+mapfile -t quiz_files < <(find "$QUIZ_DIR/$curr_quiz" -type f -name '*.quiz' | sort)
 if (( ${#quiz_files[@]} == 0 )); then
-  echo "No quiz files (*.quiz) found inside \"$QUIZ_DIR/$resp\"." >&2
+  echo "No quiz files (*.quiz) found inside \"$QUIZ_DIR/$curr_quiz\"." >&2
   exit 1
 fi
 
-echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$resp'."
+echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$curr_quiz'."
 
-for quiz_file in "${quiz_files[@]}"; do
-  # shellcheck source=/dev/null
-  unset -v quiz_title quiz_questions quiz_answers
-  source "$quiz_file" || { echo "Failed to source '$quiz_file' – skipping." >&2; continue; }
+read -r -p "Press <Enter> to take all quizzes or 'g' to choose a quiz: " resp
+goto_flag=0
+case "{resp,,}" in
+  g) goto_flag=1;;
+  *) ;;
+esac
 
-  if [[ -z ${quiz_title-} || ${#quiz_questions[@]} -eq 0 || \
-        ${#quiz_questions[@]} -ne ${#quiz_answers[@]} ]]; then
-    echo "Quiz '$quiz_file' is malformed; skipping." >&2
-    continue
-  fi
+if [[ $goto_flag -gt 0 ]]; then
+  while true; do
+    ls "$QUIZ_DIR/$curr_quiz"
+    read -r -p "Enter selected quiz or press 'q' to quit: " input
+  
+    if [[ "$input" == "q" ]]; then
+      echo "Goodbye!"
+      exit 0
+    else
+      unset -v quiz_title quiz_questions quiz_answers
+      source "$input" || { echo "Failed to source '$input' – select a different quiz." >&2; continue; }
 
-  printf '\n--- Ready: %s ---\n' "$quiz_title"
-  read -r -p "Press <Enter> to start, 's' to skip, or 'q' to quit: " resp
-  case "${resp,,}" in
-    q) echo "Goodbye!"; exit 0 ;;
-    s) echo "Skipping '$quiz_title'..."; continue ;;
-    *) ;; # anything else (including empty) begins the quiz
-  esac
-
-  run_quiz quiz_questions quiz_answers "$quiz_title"
-
-done
+      if [[ -z ${quiz_title-} || ${#quiz_questions[@]} -eq 0 || \
+            ${#quiz_questions[@]} -ne ${#quiz_answers[@]} ]]; then
+        echo "Quiz '$input' is malformed; select a different quiz." >&2
+        continue
+      fi
+    
+      printf '\n--- Ready: %s ---\n' "$quiz_title"
+      read -r -p "Press <Enter> to start: " resp
+      case "${resp,,}" in
+        *) run_quiz quiz_questions quiz_answers "$quiz_title";; # anything (including empty) begins the quiz
+      esac
+    fi
+  done
+else
+  for quiz_file in "${quiz_files[@]}"; do
+    # shellcheck source=/dev/null
+    unset -v quiz_title quiz_questions quiz_answers
+    source "$quiz_file" || { echo "Failed to source '$quiz_file' – skipping." >&2; continue; }
+  
+    if [[ -z ${quiz_title-} || ${#quiz_questions[@]} -eq 0 || \
+          ${#quiz_questions[@]} -ne ${#quiz_answers[@]} ]]; then
+      echo "Quiz '$quiz_file' is malformed; skipping." >&2
+      continue
+    fi
+  
+    printf '\n--- Ready: %s ---\n' "$quiz_title"
+    read -r -p "Press <Enter> to start, 's' to skip, or 'q' to quit: " resp
+    case "${resp,,}" in
+      q) echo "Goodbye!"; exit 0 ;;
+      s) echo "Skipping '$quiz_title'..."; continue ;;
+      *) ;; # anything else (including empty) begins the quiz
+    esac
+  
+    run_quiz quiz_questions quiz_answers "$quiz_title"
+  
+  done
+fi
 
 echo $'\n🎉  You have completed all available quizzes!  🎉'
 exit 0
