@@ -88,7 +88,7 @@ echo "Found ${#quiz_files[@]} quiz file(s) in '$QUIZ_DIR/$curr_quiz'."
 
 read -r -p "Press <Enter> to take all quizzes or 'g' to choose a quiz: " resp
 goto_flag=0
-case "{resp,,}" in
+case "${resp,,}" in
   g) goto_flag=1;;
   *) ;;
 esac
