@@ -1,0 +1,16 @@
+quiz_title="Compiler & Linker Flags"
+quiz_questions=(
+    "Variable that should contain non‑library linker flags such as -L/path"
+    "Variable that should contain library names like -lm"
+    "gcc flag that treats all warnings as errors"
+    "gcc flag that enables common warnings"
+    "If you need to link against -lssl, in which variable should it be placed"
+)
+
+quiz_answers=(
+    "LDFLAGS"
+    "LDLIBS"
+    "-Werror"
+    "-Wall"
+    "LDLIBS"
+)

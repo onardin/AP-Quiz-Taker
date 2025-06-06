@@ -1,0 +1,16 @@
+quiz_title="Four Stages of Compilation"
+quiz_questions=(
+    "Which compilation stage expands #include directives into source"
+    "Which gcc option stops after preprocessing and outputs a .i file"
+    "Which compilation stage translates pre‑processed code into assembly"
+    "Which gcc flag compiles to assembly (.s) but does not assemble"
+    "Which stage links object files into the final executable"
+)
+
+quiz_answers=(
+    "Preprocessing"
+    "-E"
+    "Compilation"
+    "-S"
+    "Linking"
+)

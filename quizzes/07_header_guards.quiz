@@ -1,0 +1,16 @@
+quiz_title="Header Guards & Includes"
+quiz_questions=(
+    "Preprocessor directive that tests if a macro has NOT been defined yet"
+    "Conventional macro name used as the header guard in add.h"
+    "Including <stdio.h> prompts the preprocessor to search which directories first"
+    "Including "foo.h" prompts the preprocessor to search which directory first"
+    "Why are header guards unnecessary for .c files"
+)
+
+quiz_answers=(
+    "#ifndef"
+    "_ADD_H_"
+    "Standard system directories"
+    "Current directory"
+    "Because .c files are never #included"
+)

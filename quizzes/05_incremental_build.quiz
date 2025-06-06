@@ -1,0 +1,16 @@
+quiz_title="Incremental Builds"
+quiz_questions=(
+    "Command to update a file's timestamp without modifying its contents"
+    "After 'touch add.h', which object file is rebuilt according to the sample project"
+    "After rebuilding add.o, which build step immediately follows"
+    "If make reports 'Nothing to be done for all', what does that imply about timestamps"
+    "If you 'touch add.o' and run make, will any compilation occur (yes/no)"
+)
+
+quiz_answers=(
+    "touch"
+    "add.o"
+    "Relinking the executable"
+    "The target is newer than its prerequisites"
+    "no"
+)

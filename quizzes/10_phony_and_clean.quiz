@@ -1,0 +1,16 @@
+quiz_title=".PHONY & Clean Targets"
+quiz_questions=(
+    "Makefile directive that declares a target is not a real file"
+    "Why declare the 'all' target as phony when a file named all exists"
+    "Typical command used inside the clean rule to remove build artifacts"
+    "What triggers the commands of a phony target to run"
+    "Special target that tells make to delete output files if a recipe fails"
+)
+
+quiz_answers=(
+    ".PHONY"
+    "To ensure the recipe always runs and is not skipped due to the file's timestamp"
+    "rm -f $(OBJS) $(TARGET) $(TARGET).exe"
+    "Invoking the target or it being a dependency of another target"
+    ".DELETE_ON_ERROR"
+)
