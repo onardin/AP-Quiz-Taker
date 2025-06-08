@@ -10,7 +10,7 @@ quiz_questions=(
 quiz_answers=(
     ".PHONY"
     "To ensure the recipe always runs and is not skipped due to the file's timestamp"
-    "rm -f $(OBJS) $(TARGET) $(TARGET).exe"
+    "rm -f \$(OBJS) \$(TARGET) \$(TARGET).exe"
     "Invoking the target or it being a dependency of another target"
     ".DELETE_ON_ERROR"
 )
