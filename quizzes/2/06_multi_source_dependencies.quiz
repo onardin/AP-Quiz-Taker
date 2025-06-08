@@ -11,6 +11,6 @@ quiz_answers=(
     "OBJS"
     "2"
     ".o"
-    "$(filter %.h, ...)"
+    "\$(filter %.h, ...)"
     "Recompile bar.c to bar.o; relink"
 )
