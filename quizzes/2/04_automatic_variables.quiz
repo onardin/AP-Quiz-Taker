@@ -3,8 +3,8 @@ quiz_questions=(
     "Which automatic variable represents the target filename in the current rule"
     "Which automatic variable is the first prerequisite"
     "Which automatic variable expands to all prerequisites"
-    "Inside an implicit pattern rule, what does $* expand to"
-    "In a linking rule $(TARGET): $(OBJS), what does $^ expand to"
+    "Inside an implicit pattern rule, what does \$* expand to"
+    "In a linking rule \$(TARGET): \$(OBJS), what does \$^ expand to"
 )
 
 quiz_answers=(
