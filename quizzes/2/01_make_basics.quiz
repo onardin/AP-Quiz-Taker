@@ -9,8 +9,8 @@ quiz_questions=(
 
 quiz_answers=(
     "CC"
-    "$(wildcard *.c)"
-    "$(patsubst %.c,%,$(C_FILE))"
+    "\$(wildcard *.c)"
+    "\$(patsubst %.c,%,\$(C_FILE))"
     "-g"
-    "$<"
+    "\$<"
 )
