@@ -8,7 +8,7 @@ quiz_questions=(
 )
 
 quiz_answers=(
-    "$(info ...)"
+    "\$(info ...)"
     "Prints the commands without executing them"
     "make -d"
     "Because make expects recipe lines to start with a TAB character"
