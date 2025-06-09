@@ -9,6 +9,9 @@ quiz_questions=(
     "What type of file is produced as a result of this step"
     "Which gcc flag means to compile only to produce an object file and not to link into the final executable"
     "Which stage links object files into the final executable"
+    "What type of code exists in the final executable"
+    "What prefix do you use to run the final executable"
+    "What does this tell the shell"
 )
 
 quiz_answers=(
@@ -21,4 +24,7 @@ quiz_answers=(
     "Object file"
     "-c"
     "Linking"
+    "Machine"
+    "./"
+    "To search for the executable in the current directory, not in the PATH"
 )
