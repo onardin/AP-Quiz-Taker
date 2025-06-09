@@ -5,12 +5,14 @@ quiz_questions=(
     "After rebuilding add.o, which build step immediately follows"
     "If make reports 'Nothing to be done for all', what does that imply about timestamps"
     "If you 'touch add.o' and run make, will any compilation occur (yes/no)"
+    "If you touch the final executable and run make, will any compilation or linking occur (yes/no)"
 )
 
 quiz_answers=(
     "touch"
     "add.o"
-    "Relinking the executable"
+    "Linking"
     "The target is newer than its prerequisites"
+    "no"
     "no"
 )
