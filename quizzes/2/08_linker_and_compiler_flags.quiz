@@ -4,7 +4,7 @@ quiz_questions=(
     "Variable that should contain library names like -lm"
     "gcc flag that treats all warnings as errors"
     "gcc flag that enables common warnings"
-    "If you need to link against -lssl, in which variable should it be placed"
+    "gcc flag that enforces strict standard compliance"
 )
 
 quiz_answers=(
@@ -12,5 +12,5 @@ quiz_answers=(
     "LDLIBS"
     "-Werror"
     "-Wall"
-    "LDLIBS"
+    "-pedantic-errors"
 )
