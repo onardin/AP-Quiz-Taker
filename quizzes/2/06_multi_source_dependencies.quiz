@@ -3,7 +3,7 @@ quiz_questions=(
     "In a generic Makefile, which variable expands all .c files to matching .o files"
     "Given pattern rule '%.o: %.c %.h', how many prerequisites does foo.o have"
     "Which file type produced by the assembler contains the symbol table"
-    "Which make function would you use to filter only .h files from a list"
+    "During the symbol resolution step, the linker associates each symbol reference with how many symbol definitions"
     "If bar.c is touched, name the two steps needed to rebuild the executable (in order)"
 )
 
@@ -11,6 +11,6 @@ quiz_answers=(
     "OBJS"
     "2"
     ".o"
-    "\$(filter %.h, ...)"
-    "Recompile bar.c to bar.o; relink"
+    "1"
+    "Compilation, Linking"
 )
