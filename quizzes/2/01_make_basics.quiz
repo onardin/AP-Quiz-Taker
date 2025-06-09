@@ -6,6 +6,7 @@ quiz_questions=(
     "Flag that tells gcc to produce debugging information"
     "Which automatic variable refers to the first dependency in a rule"
     "Which automatic variable represents the target filename in the current rule"
+    "What is the default name of the final executable"
 )
 
 quiz_answers=(
@@ -14,5 +15,6 @@ quiz_answers=(
     "\$(patsubst %.c,%,\$(C_FILE))"
     "-g"
     "\$<"
-    "\$@"
+    "\$@"    
+    "a.out"
 )
