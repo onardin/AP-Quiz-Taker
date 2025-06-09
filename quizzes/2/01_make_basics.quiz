@@ -4,7 +4,7 @@ quiz_questions=(
     "make function used to select all filenames ending with .c in current directory"
     "make function used to transform a list of filenames from %.c to % (remove extension)"
     "Flag that tells gcc to produce debugging information"
-    "Which automatic variable refers to the first prerequisite in a rule"
+    "Which automatic variable refers to the first dependency in a rule"
 )
 
 quiz_answers=(
