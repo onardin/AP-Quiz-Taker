@@ -6,6 +6,8 @@ quiz_questions=(
     "If a file named clean exists in the directory, how can we ensure the clean rule still runs"
     "Write the rule for all in a single-source Makefile"
     "Write the rule for clean in a single-source Makefile"
+    "Makefile directive that declares a target is not a real file"
+    "Why declare the 'all' target as phony when a file named all exists"
 )
 
 quiz_answers=(
@@ -15,4 +17,5 @@ quiz_answers=(
     ".PHONY: clean"
     "\$(CC) \$(CFLAGS) \$(LDFLAGS) \$(C_FILE) -o \$(TARGET) \$(LDLIBS)"
     "rm -f \$(TARGET) \$(TARGET).exe"
+    ".PHONY"
 )
