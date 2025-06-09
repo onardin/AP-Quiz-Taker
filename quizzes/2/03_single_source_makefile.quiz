@@ -3,14 +3,16 @@ quiz_questions=(
     "In the template Makefile, what variable holds the output executable's name"
     "Given C_FILE=hello.c, what is the resulting TARGET after patsubst"
     "Which phony target is often used to remove build artifacts"
-    "What compiler flag prevents linking and produces an object file"
     "If a file named clean exists in the directory, how can we ensure the clean rule still runs"
+    "Write the rule for all in a single-source Makefile"
+    "Write the rule for clean in a single-source Makefile"
 )
 
 quiz_answers=(
     "TARGET"
     "hello"
     "clean"
-    "-c"
-    "Declare 'clean' as a phony target with .PHONY: clean"
+    ".PHONY: clean"
+    "\$(CC) \$(CFLAGS) \$(LDFLAGS) \$(C_FILE) -o \$(TARGET) \$(LDLIBS)"
+    "rm -f \$(TARGET) \$(TARGET).exe"
 )
