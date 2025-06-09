@@ -5,6 +5,8 @@ quiz_questions=(
     "gcc flag that treats all warnings as errors"
     "gcc flag that enables common warnings"
     "gcc flag that enforces strict standard compliance"
+    "make function used to print variable values during execution"
+    "How can you escape $(OBJS) so that the variable name is not expanded"
 )
 
 quiz_answers=(
@@ -13,4 +15,6 @@ quiz_answers=(
     "-Werror"
     "-Wall"
     "-pedantic-errors"
+    "\$(info...)"
+    "\$\$(OBJS)"
 )
