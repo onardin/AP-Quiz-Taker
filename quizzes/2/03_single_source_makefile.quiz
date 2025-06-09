@@ -18,4 +18,5 @@ quiz_answers=(
     "\$(CC) \$(CFLAGS) \$(LDFLAGS) \$(C_FILE) -o \$(TARGET) \$(LDLIBS)"
     "rm -f \$(TARGET) \$(TARGET).exe"
     ".PHONY"
+    "To ensure the recipe always runs and is not skipped due to the file's timestamp"
 )
