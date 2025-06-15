@@ -1,0 +1,15 @@
+quiz_title="malloc, free, and Leaks"
+quiz_questions=(
+    "What does malloc return on allocation failure?"
+    "Why is returning a stack-allocated array dangerous?"
+    "Which Valgrind flag gives a leak summary?"
+    "Complete: free() must be passed the ______ returned by malloc()."
+    "Calling free twice on the same pointer causes what kind of error?"
+)
+quiz_answers=(
+    "NULL"
+    "Pointer becomes invalid once the stack frame unwinds"
+    "--leak-check=full"
+    "exact same pointer"
+    "Double-free / heap corruption"
+)

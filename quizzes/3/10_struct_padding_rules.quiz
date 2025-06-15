@@ -1,0 +1,15 @@
+quiz_title="Struct Padding Rules"
+quiz_questions=(
+    "Rule 1: The offset of each member must be a multiple of __________."
+    "A struct containing {char; long;} on x86-64 is how many bytes?"
+    "Why is padding inserted between char and int in struct {char c; int i;}?"
+    "What GCC attribute can pack a struct with no padding (not portable)?"
+    "True/False: The *total* size of a struct must be a multiple of its largest member."
+)
+quiz_answers=(
+    "that member’s size"
+    "16"
+    "To align int on a 4-byte boundary for faster access"
+    "__attribute__((packed))"
+    "True"
+)

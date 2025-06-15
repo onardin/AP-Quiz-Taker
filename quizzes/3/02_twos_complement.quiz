@@ -1,0 +1,15 @@
+quiz_title="Signed vs Unsigned & Two’s Complement"
+quiz_questions=(
+    "What binary pattern represents −1 in an 8-bit signed char?"
+    "Describe the 3-step recipe to compute a two’s-complement negative value."
+    "What decimal value does 1110 1111₂ represent when interpreted as a signed char?"
+    "Unsigned overflow in C is defined behavior. What value results from (unsigned char)255 + 1?"
+    "Why does −128 have no positive counterpart in 8-bit two’s complement?"
+)
+quiz_answers=(
+    "11111111"
+    "Write positive magnitude, invert bits, add 1"
+    "−17"
+    "0"
+    "Range is asymmetrical; one extra negative value"
+)

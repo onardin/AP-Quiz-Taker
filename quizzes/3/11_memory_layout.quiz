@@ -1,0 +1,15 @@
+quiz_title="C Runtime Memory Layout"
+quiz_questions=(
+    "Which segment grows *downward* at runtime?"
+    "String literals live in what segment?"
+    "Globals with no initializer go to the ______ section (abbrev.)."
+    "Heap allocations grow in which direction?"
+    "Name two reasons the text segment is typically read-only."
+)
+quiz_answers=(
+    "The stack"
+    "Read-only data"
+    "bss"
+    "Upward (toward higher addresses)"
+    "Security (prevent code injection); program integrity"
+)

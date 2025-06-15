@@ -1,0 +1,15 @@
+quiz_title="Strings & Character Arrays"
+quiz_questions=(
+    "What sentinel byte ends every C string?"
+    "strlen(\"COMS\") returns what value?"
+    "Difference between strcpy and strdup in one phrase?"
+    "Which header provides string functions like strcmp?"
+    "Why does char *s=\"hi\"; s[0]='H'; segfault on many systems?"
+)
+quiz_answers=(
+    "0 (\\0)"
+    "4"
+    "strdup allocates on the heap"
+    "string.h"
+    "String literal lives in read-only memory"
+)

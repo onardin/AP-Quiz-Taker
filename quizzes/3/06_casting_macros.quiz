@@ -1,0 +1,15 @@
+quiz_title="Implicit & Explicit Casting, Macros"
+quiz_questions=(
+    "When assigning 1.9 to an int, what value is stored?"
+    "Write the explicit cast to turn unsigned long bits into a double pointer named dp."
+    "Which pre-processor directive creates a textual constant?"
+    "Why can char c = 0x41424344 compile without -Werror=overflow?"
+    "Which promotes first: int to long or int to double?"
+)
+quiz_answers=(
+    "1"
+    "dp = (double *)ul;"
+    "#define"
+    "Excess high-order bytes are truncated into char"
+    "int → double"
+)

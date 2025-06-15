@@ -1,0 +1,15 @@
+quiz_title="Pointers 101"
+quiz_questions=(
+    "On a 64-bit machine, how many bytes does *any* pointer occupy?"
+    "What operator returns the address of a variable?"
+    "What is the type of argv in main(int argc, char **argv)?"
+    "Dereferencing a NULL pointer causes what runtime error?"
+    "Give the syntax for a pointer to a function taking (int,int) and returning int."
+)
+quiz_answers=(
+    "8"
+    "&"
+    "char **"
+    "Segmentation fault"
+    "int (*fptr)(int,int)"
+)

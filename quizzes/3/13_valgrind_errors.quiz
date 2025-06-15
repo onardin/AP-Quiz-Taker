@@ -1,0 +1,15 @@
+quiz_title="Common Valgrind Error Types"
+quiz_questions=(
+    "An 'invalid read of size 4' typically hints at what bug?"
+    "What message appears when branch logic depends on garbage memory?"
+    "Dereferencing 0x0 usually produces which fatal signal?"
+    "Which kind of leak *won’t* crash a program but can exhaust memory?"
+    "True/False: Valgrind can detect writing past the end of a malloc block."
+)
+quiz_answers=(
+    "Array out-of-bounds (reading 4 bytes past allocation)"
+    "'Conditional jump or move depends on uninitialized value(s)'"
+    "SIGSEGV / segmentation fault"
+    "Memory leak"
+    "True"
+)

@@ -1,0 +1,15 @@
+quiz_title="Pointer Arithmetic & void *"
+quiz_questions=(
+    "If int *p points to array[0], what does p+3 point to?"
+    "Why can’t you dereference a void * directly?"
+    "Given double arr[4]; what is *(arr+2) equivalent to?"
+    "True/False: Adding 1 to a char* advances by exactly 1 byte."
+    "Write an expression that converts int *ip to char *cp without a warning."
+)
+quiz_answers=(
+    "array[3]"
+    "Compiler doesn’t know the pointed-to type size"
+    "arr[2]"
+    "True"
+    "cp = (char *)ip;"
+)

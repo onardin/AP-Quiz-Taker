@@ -1,0 +1,15 @@
+quiz_title="Command-Line Args & String Arrays"
+quiz_questions=(
+    "What is argv[0] traditionally?"
+    "argc counts how many arguments *excluding* what sentinel?"
+    "Rewrite the idiom for iterating argv without subscripts."
+    "Which function converts a numeric string to int?"
+    "Given ./prog 24 96, what character does *(*(argv+2)+1) print?"
+)
+quiz_answers=(
+    "Program name (path)"
+    "The final NULL pointer"
+    "for(char **p=argv+1; *p; ++p) puts(*p);"
+    "atoi"
+    "'6'"
+)
