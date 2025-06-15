@@ -1,15 +1,15 @@
 quiz_title="Shift Operators & Arithmetic Tricks"
 quiz_questions=(
-    "Left-shifting an unsigned int by 3 is equivalent to multiplying by what power of two?"
+    "Left-shifting (<<) an unsigned int by 3 is equivalent to multiplying by what power of two?"
     "For a signed *negative* int, right-shift behavior is __________ (portable / implementation-defined / undefined)."
-    "What value results from 0b0001 1100 >> 2?"
+    "What bit is added in place of the leftmost bit when right-shifting a signed *negative* number on Linux?"
+    "What value results from 00011100 >> 2?"
     "Complete: 7 << 1 = __ ; 7 >> 1 = __."
-    "Why is (x << 1) often faster than x * 2 on embedded systems?"
 )
 quiz_answers=(
-    "2^3 or 8"
+    "8"
     "implementation-defined"
-    "0b00000111"
+    "1"
+    "00000111"
     "14 3"
-    "Shift uses one ALU cycle with no multiplier hardware"
 )
