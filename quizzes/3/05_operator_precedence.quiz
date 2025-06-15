@@ -2,14 +2,12 @@ quiz_title="C Operator Precedence Quick-Fire"
 quiz_questions=(
     "Which has higher precedence: * (dereference) or ++ (postfix)?"
     "True/False: && binds more tightly than ||."
-    "What operator is used for a compound literal in C99?"
     "Given x = 2; y = 3; what does x + y << 1 evaluate to?"
     "In the expression a = b = c = 0, which assignment executes first?"
 )
 quiz_answers=(
     "++ (postfix)"
     "True"
-    "(type){…}"
     "10"
     "c = 0 (rightmost)"
 )
