@@ -8,8 +8,8 @@ quiz_questions=(
 )
 quiz_answers=(
     "11111111"
-    "Write positive magnitude, invert bits, add 1"
+    "Write positive representation, invert bits, add 1"
     "−17"
     "0"
-    "Range is asymmetrical; one extra negative value"
+    "Max positive number is 127"
 )
