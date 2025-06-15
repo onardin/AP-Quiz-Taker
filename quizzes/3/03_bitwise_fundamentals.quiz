@@ -1,15 +1,19 @@
 quiz_title="Bitwise AND | OR ~ NOT ^ XOR"
 quiz_questions=(
-    "Given a = 0x0F and b = 0x33, what is a & b in hex?"
     "Which bitwise operator is handy for turning ON specific flag bits without affecting others?"
+    "Fill in: 1010 & 0101 = ________ (binary)."
     "What single-line XOR trick swaps two integer variables x and y?"
     "How can you quickly test if an int n is even using bitwise ops?"
-    "Fill in: 0b1010 ^ 0b0101 = ________ (binary)."
+    "Fill in: 1010 ^ 0101 = ________ (binary)."
+    "What bitwise operator is used to toggle every bit?"
+    "Fill in: 1010 | 1100 = ________ (binary)."
 )
 quiz_answers=(
-    "0x03"
     "OR (|)"
+    "0000"
     "x^=y; y^=x; x^=y;"
-    "if(!(n & 1)) /* even */"
+    "!(n & 1)"
     "1111"
+    "NOT (~)"
+    "1110"
 )
