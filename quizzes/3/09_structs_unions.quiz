@@ -7,8 +7,8 @@ quiz_questions=(
     "How do you access member x through pointer p to a struct? (Write the operator.)"
 )
 quiz_answers=(
-    "Overwrites (they share storage)"
-    "The struct"
+    "Overwrites them"
+    "struct"
     "typedef"
     "s.i = 42;"
     "p->x"
