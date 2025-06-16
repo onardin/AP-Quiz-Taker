@@ -14,7 +14,7 @@ quiz_answers=(
     "Compiler doesn’t know the pointed-to type size"
     "arr[2]"
     "True"
-    "cp = (char *)ip;"
+    "char *cp = (char *)ip;"
     "4"
     "16"
     "argv[1][4]"
