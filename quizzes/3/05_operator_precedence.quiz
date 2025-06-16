@@ -4,10 +4,12 @@ quiz_questions=(
     "True/False: && binds more tightly than ||."
     "Given x = 2; y = 3; what does x + y << 1 evaluate to?"
     "In the expression a = b = c = 0, which assignment executes first?"
+    "Which has a higher precedence: [] (array subscripting) or & (address-of)?"
 )
 quiz_answers=(
-    "++ (postfix)"
+    "++"
     "True"
     "10"
-    "c = 0 (rightmost)"
+    "c = 0"
+    "[]"
 )
