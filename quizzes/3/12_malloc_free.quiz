@@ -5,11 +5,15 @@ quiz_questions=(
     "Which Valgrind flag gives a leak summary?"
     "Complete: free() must be passed the ______ returned by malloc()."
     "Calling free twice on the same pointer causes what kind of error?"
+    "Allocate an int array of size 5 on the heap and assign it to the pointer arr."
+    "Free that array."
 )
 quiz_answers=(
     "NULL"
     "Pointer becomes invalid once the stack frame unwinds"
     "--leak-check=full"
     "exact same pointer"
-    "Double-free / heap corruption"
+    "Double-free"
+    "int *arr = malloc(5 * sizeof(int));"
+    "free(arr);"
 )
