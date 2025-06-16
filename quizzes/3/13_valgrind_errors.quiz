@@ -7,9 +7,9 @@ quiz_questions=(
     "True/False: Valgrind can detect writing past the end of a malloc block."
 )
 quiz_answers=(
-    "Array out-of-bounds (reading 4 bytes past allocation)"
-    "'Conditional jump or move depends on uninitialized value(s)'"
-    "SIGSEGV / segmentation fault"
+    "Array out-of-bounds"
+    "Conditional jump or move depends on uninitialized values"
+    "Segmentation fault"
     "Memory leak"
     "True"
 )
