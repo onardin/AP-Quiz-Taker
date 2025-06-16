@@ -1,15 +1,17 @@
 quiz_title="C Runtime Memory Layout"
 quiz_questions=(
+    "Order the following memory locations from highest to lowest memory address: 1 - stack, 2 - read-only, 3 - uninitialized data (bss), 4 - heap, 5 - CL args & environment variables, 6 - initialized data, 7 - text"
     "Which segment grows *downward* at runtime?"
     "String literals live in what segment?"
     "Globals with no initializer go to the ______ section (abbrev.)."
     "Heap allocations grow in which direction?"
-    "Name two reasons the text segment is typically read-only."
+    "Name one reason the text segment is typically read-only."
 )
 quiz_answers=(
-    "The stack"
-    "Read-only data"
+    "5 1 4 3 6 2 7"
+    "Stack"
+    "Read-only"
     "bss"
-    "Upward (toward higher addresses)"
-    "Security (prevent code injection); program integrity"
+    "Upward"
+    "Security"
 )
