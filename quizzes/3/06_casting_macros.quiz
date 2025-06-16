@@ -10,6 +10,6 @@ quiz_answers=(
     "1"
     "dp = (double *)ul;"
     "#define"
-    "Excess high-order bytes are truncated into char"
-    "int → double"
+    "Truncation"
+    "int to double"
 )
