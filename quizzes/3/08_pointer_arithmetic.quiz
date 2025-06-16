@@ -5,6 +5,9 @@ quiz_questions=(
     "Given double arr[4]; what is *(arr+2) equivalent to?"
     "True/False: Adding 1 to a char* advances by exactly 1 byte."
     "Write an expression that converts int *ip to char *cp without a warning."
+    "Let int x = 56. What is the sizeof(x)?"
+    "Let int a[4]. What is the sizeof(a)?"
+    "What is the pointer arithmetic expression *(*(argv+1) + 4) equivalent to when using array subscripting?"
 )
 quiz_answers=(
     "array[3]"
@@ -12,4 +15,7 @@ quiz_answers=(
     "arr[2]"
     "True"
     "cp = (char *)ip;"
+    "4"
+    "16"
+    "argv[1][4]"
 )
