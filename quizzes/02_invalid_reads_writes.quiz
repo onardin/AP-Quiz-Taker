@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+quiz_title="Invalid Reads & Writes"
+quiz_questions=(
+    "What Valgrind error occurs when you attempt to read memory outside an allocated block?"
+    "On the BB server, an 'invalid read of size 4' usually corresponds to which C data type?"
+    "malloc(5 * sizeof(int)) allocates how many bytes on a system where sizeof(int) == 4?"
+    "What Valgrind error occurs when writing past the end of a heap-allocated array?"
+    "How many bytes are written if a program incorrectly writes 6 ints into an array of 5 ints?"
+)
+
+quiz_answers=(
+    "Invalid read"
+    "int"
+    "20"
+    "Invalid write"
+    "24"
+)

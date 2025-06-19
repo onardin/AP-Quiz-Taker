@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+quiz_title="Heap vs Stack"
+quiz_questions=(
+    "Which memory region in C programs grows downward in address space?"
+    "Which memory region grows upward and must be managed manually?"
+    "Returning the address of a local stack array leads to what kind of pointer?"
+    "malloc allocates memory on which region?"
+    "Failing to free heap memory after use causes what issue detected by Valgrind?"
+)
+
+quiz_answers=(
+    "The stack"
+    "The heap"
+    "Dangling pointer"
+    "The heap"
+    "Memory leak"
+)
