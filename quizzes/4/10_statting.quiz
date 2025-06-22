@@ -5,6 +5,8 @@ quiz_questions=(
   "Where do we store the relevant information on the specified file?"
   "Create a stat buffer called filestat."
   "Stat the contents of ap.txt and store it in the stat buffer you just created."
+  "How can you access the st_mode field of the stat buffer?"
+  "What if our filestat was a pointer to the stat buffer?"
 )
 
 quiz_answers=(
@@ -13,4 +15,6 @@ quiz_answers=(
   "stat buffer"
   "struct stat filestat;"
   "stat("ap.txt",&filestat);"
+  "filestat.st_mode;"
+  "filestat->st_mode;"
 )
