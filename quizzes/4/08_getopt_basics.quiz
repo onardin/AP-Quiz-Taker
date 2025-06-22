@@ -5,6 +5,8 @@ quiz_questions=(
   "What is the equivalent function you need to call in bash to retrieve the post-flag arguments?"
   "What is the external variable associated with options requiring arguments?"
   "What is the external variable used to access the option read?"
+  "A utility ./stats accepts optional flags -v (verbose, no argument) and -h (help, no argument), and a required -o <outfile>. What’s the optstring?"
+  "How do you set char *out = NULL; from optarg?"
 )
 
 quiz_answers=(
@@ -13,4 +15,6 @@ quiz_answers=(
   "shift"
   "optarg"
   "optopt"
+  "ho:v"
+  "out=optarg;"
 )
