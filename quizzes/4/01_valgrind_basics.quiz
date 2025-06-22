@@ -3,15 +3,11 @@ quiz_title="Valgrind Basics"
 quiz_questions=(
     "Which command-line option makes Valgrind perform a detailed memory leak check?"
     "Write the Valgrind command to run executable 'prog' with arguments 'foo bar' and full leak check."
-    "Name one category of memory error (other than leaks) that Valgrind can detect."
-    "Valgrind reports errors to which standard stream by default?"
     "True or False: Valgrind can detect both memory leaks and invalid memory accesses."
 )
 
 quiz_answers=(
     "--leak-check=full"
     "valgrind --leak-check=full ./prog foo bar"
-    "Invalid read"
-    "stderr"
     "True"
 )
