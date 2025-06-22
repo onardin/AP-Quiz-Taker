@@ -1,17 +1,13 @@
 #!/usr/bin/env bash
 quiz_title="Segmentation Faults"
 quiz_questions=(
-    "What is the most common cause of a segmentation fault mentioned in the slides?"
+    "What is the most common cause of a segmentation fault?"
     "Dereferencing a NULL pointer is reported as an invalid read at what address?"
-    "True or False: Valgrind provides more detail about segmentation faults than running the program without it."
-    "Attempting to write to which memory segment caused the segfault in the slide example with strcpy?"
-    "Which C library function was used in the example that triggered the segmentation fault?"
+    "Attempting to write to which memory segment will cause a segfault with strcpy?"
 )
 
 quiz_answers=(
     "Dereferencing a null pointer"
     "0x0"
-    "True"
-    "Read‑only text segment"
-    "strcpy"
+    "Read‑only"
 )
