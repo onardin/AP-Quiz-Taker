@@ -1,11 +1,9 @@
-#!/usr/bin/env bash
 quiz_title="C File I/O Basics"
 quiz_questions=(
     "Which function opens a file and returns a FILE* pointer?"
     "What mode string opens a file for appending text?"
     "What value does fclose return on success?"
     "Which function reads one line (including the newline) into a buffer and null‑terminates it?"
-    "What does the acronym EOF stand for?"
 )
 
 quiz_answers=(
@@ -13,5 +11,4 @@ quiz_answers=(
     "a"
     "0"
     "fgets"
-    "End Of File"
 )
