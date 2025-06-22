@@ -4,6 +4,8 @@ quiz_questions=(
     "Give one C control structure that constitutes a 'conditional jump' in Valgrind terminology."
     "Passing a pointer to uninitialized memory to printf may trigger which Valgrind error type?"
     "True or False: Forgetting to null‑terminate a C string can lead to a conditional jump error."
+    "Where does strlen stop reading?"
+    
 )
 
 quiz_answers=(
@@ -11,4 +13,5 @@ quiz_answers=(
     "if statement"
     "Conditional jump or move depends on uninitialized value(s)"
     "True"
+    "\0"
 )
