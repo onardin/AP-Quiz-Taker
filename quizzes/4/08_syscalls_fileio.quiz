@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 quiz_title="open/read/write System Calls"
 quiz_questions=(
     "Which header must be included to use the open() system call?"
