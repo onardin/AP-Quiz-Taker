@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 quiz_title="Valgrind Basics"
 quiz_questions=(
     "Which command-line option makes Valgrind perform a detailed memory leak check?"
