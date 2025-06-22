@@ -4,6 +4,8 @@ quiz_questions=(
     "What mode string opens a file for appending text?"
     "What value does fclose return on success?"
     "Which function reads one line (including the newline) into a buffer and null‑terminates it?"
+    "Assume you allocate a buffer like so: char buf[MAXLINE]. At most, how many charecters will fgets read into the buffer?"
+    "What does fgets return on EOF or error?"
 )
 
 quiz_answers=(
@@ -11,4 +13,6 @@ quiz_answers=(
     "a"
     "0"
     "fgets"
+    "MAXLINE-1"
+    "NULL"
 )
