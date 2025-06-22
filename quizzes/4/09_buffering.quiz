@@ -1,1 +1,14 @@
+quiz_title="Buffering"
+quiz_questions=(
+  "Give a use case for a block buffer."
+  "Give a use case for a line buffer."
+  "If a newline was not included in a printf statement, what function can we use to ensure that we printf before stderr?"
+  "Give a use case for no buffer."
+)
 
+quiz_answers=(
+  "Writing to a file"  
+  "printf"
+  "fflush"
+  "stderr"
+)
