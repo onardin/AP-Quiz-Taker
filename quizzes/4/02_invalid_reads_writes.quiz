@@ -4,6 +4,7 @@ quiz_questions=(
     "An 'invalid read of size 4' usually corresponds to which C data type?"
     "What Valgrind error occurs when writing past the end of a heap-allocated array?"
     "How many bytes are written if a program incorrectly writes 6 ints into an array of 5 ints?"
+    "What valgrind error do you get from this code: char *buf = malloc(4); strcpy(buf, "test");"
 )
 
 quiz_answers=(
@@ -11,4 +12,5 @@ quiz_answers=(
     "int"
     "Invalid write"
     "24"
+    "Invalid write"
 )
