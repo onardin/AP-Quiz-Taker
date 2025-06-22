@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 quiz_title="Invalid Reads & Writes"
 quiz_questions=(
     "What Valgrind error occurs when you attempt to read memory outside an allocated block?"
