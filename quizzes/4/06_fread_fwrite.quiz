@@ -3,10 +3,18 @@ quiz_questions=(
     "Which function writes n objects of a given size from memory to a file?"
     "If fread reads fewer objects than requested, which function can you call to check for end‑of‑file?"
     "What does fread return when it reaches the end of a file?"
+    "What is the stdin equivalent of getc/putc?"
+    "Where does SEEK_SET place you in the file?"
+    "What function returns the current file position for the stream?"
+    "What function will bring you back to the beginning of a file?"
 )
 
 quiz_answers=(
     "fwrite"
     "feof"
     "0"
+    "getchar/putchar"
+    "Beginning"
+    "ftell"
+    "rewind"
 )
