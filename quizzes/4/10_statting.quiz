@@ -1,0 +1,16 @@
+quiz_title="Statting"
+quiz_questions=(
+  "What functions can we use to access info about a file without having to open/close it?"
+  "What is the difference between lstat and stat?"
+  "Where do we store the relevant information on the specified file?"
+  "Create a stat buffer called filestat."
+  "Stat the contents of ap.txt and store it in the stat buffer you just created."
+)
+
+quiz_answers=(
+  "stat family"
+  "lstat analyzes symlinks"
+  "stat buffer"
+  "struct stat filestat;"
+  "stat("ap.txt",&filestat);"
+)
