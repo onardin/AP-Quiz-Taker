@@ -14,7 +14,7 @@ quiz_answers=(
   "lstat analyzes symlinks"
   "stat buffer"
   "struct stat filestat;"
-  "stat("ap.txt",&filestat);"
+  "stat(\"ap.txt\",&filestat);"
   "filestat.st_mode;"
   "filestat->st_mode;"
 )
