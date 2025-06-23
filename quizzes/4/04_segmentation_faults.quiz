@@ -8,5 +8,5 @@ quiz_questions=(
 quiz_answers=(
     "Dereferencing a null pointer"
     "0x0"
-    "Read‑only"
+    "Read\-only"
 )
