@@ -4,7 +4,7 @@ quiz_questions=(
   "Suppose you ran a program like so: ./ap -n -v ap.txt. If you were using getopt to parse the CL args, what index would optind point to once you have finished calling getopt?"
   "What is the equivalent function you need to call in bash to retrieve the post-flag arguments?"
   "What is the external variable associated with options requiring arguments?"
-  "What is the external variable used to access the option read?"
+  "What is the external variable used to access the option itself?"
   "A utility ./stats accepts optional flags -v (verbose, no argument) and -h (help, no argument), and a required -o <outfile>. What’s the optstring?"
   "How do you set char *out = NULL; from optarg?"
 )
