@@ -2,14 +2,16 @@ quiz_title="UNIX Pipes"
 quiz_questions=(
   "What system call creates a pipe?"
   "Which end of fd[] is for reading, and which for writing?"
+  "What kind of pipes does UNIX implement?"
   "True or False: A pipe can be used between unrelated processes."
-  "What happens if you write to a pipe whose read end is closed?"
+  "What signal do you get if you write to a pipe whose read end is closed?"
   "How do you connect stdout of one process to stdin of another using pipes and fork?"
 )
 quiz_answers=(
-  "pipe(fd)"
+  "int pipe(int fd[2])"
   "fd[0] is read, fd[1] is write"
+  "Half-duplex"
   "False"
-  "You get SIGPIPE or write() returns -1 with errno=EPIPE"
+  "SIGPIPE"
   "dup2 to redirect STDOUT_FILENO to pipe write end, then exec"
 )
