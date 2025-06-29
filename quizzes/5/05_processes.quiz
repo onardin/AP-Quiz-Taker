@@ -1,0 +1,15 @@
+quiz_title="Process Fundamentals"
+quiz_questions=(
+  "What call returns the PID of the current process?"
+  "What call returns the PID of your parent process?"
+  "Name two ways a process can terminate itself."
+  "What’s the difference between exit() and _exit()?"
+  "What are orphans and who adopts them?"
+)
+quiz_answers=(
+  "getpid()"
+  "getppid()"
+  "exit(), _exit(), returning from main"
+  "exit() runs atexit handlers and flushes stdio; _exit() skips them"
+  "Orphans are reparented to init (PID 1)"
+)

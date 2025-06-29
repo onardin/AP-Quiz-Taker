@@ -1,0 +1,15 @@
+quiz_title="exec Family"
+quiz_questions=(
+  "What does exec() do to the current process image?"
+  "Which exec variant searches PATH if the filename contains no '/'?"
+  "What does the 'v' in execv() stand for?"
+  "How do execle() and execvpe() differ from execvp()?"
+  "True or False: After a successful exec(), code following the exec call still runs."
+)
+quiz_answers=(
+  "It replaces it with a new program image"
+  "execlp or execvp"
+  "It takes a vector (array) of arguments"
+  "They allow you to pass a custom environment array"
+  "False"
+)

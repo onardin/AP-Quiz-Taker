@@ -1,0 +1,15 @@
+quiz_title="fork Basics"
+quiz_questions=(
+  "What value does fork() return to the parent process?"
+  "What value does fork() return to the child process?"
+  "True or False: After fork(), parent and child share the same memory space."
+  "What happens to open file descriptors across a fork() call?"
+  "How do you detect in code that a fork() call failed?"
+)
+quiz_answers=(
+  "Child PID"
+  "0"
+  "False"
+  "They remain open and are duplicated in the child"
+  "-1"
+)

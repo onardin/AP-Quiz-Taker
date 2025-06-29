@@ -1,0 +1,15 @@
+quiz_title="Waiting on Children"
+quiz_questions=(
+  "What does wait(&status) return on success?"
+  "How is wait(&status) related to waitpid()?"
+  "What does waitpid(pid, &status, WNOHANG) do?"
+  "What state do child processes enter if the parent never waits?"
+  "Why should you always wait for your children?"
+)
+quiz_answers=(
+  "The PID of the terminated child"
+  "wait() is equivalent to waitpid(-1, &status, 0)"
+  "It returns 0 if no child has exited yet"
+  "Zombie state"
+  "To retrieve their exit status and prevent zombies"
+)
