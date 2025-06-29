@@ -1,15 +1,19 @@
 quiz_title="Waiting on Children"
 quiz_questions=(
+  "How can we prevent non-deterministic behavior arfter forking?"
   "What does wait(&status) return on success?"
   "How is wait(&status) related to waitpid()?"
-  "What does waitpid(pid, &status, WNOHANG) do?"
-  "What state do child processes enter if the parent never waits?"
+  "What do child processes turn into if the parent never waits?"
   "Why should you always wait for your children?"
+  "What do child processes turn into if the parent terminates before them?"
+  "What happens when a child becomes an orphan?"
 )
 quiz_answers=(
+  "Using the wait() functions"
   "The PID of the terminated child"
   "wait() is equivalent to waitpid(-1, &status, 0)"
-  "It returns 0 if no child has exited yet"
-  "Zombie state"
-  "To retrieve their exit status and prevent zombies"
+  "Zombies"
+  "To retrieve their exit status"
+  "Orphans"
+  "Its parent is reassigned to a special system process"
 )
