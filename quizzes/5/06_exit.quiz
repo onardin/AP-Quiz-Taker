@@ -1,4 +1,17 @@
 quiz_title="Exit Functions"
-quiz_questions=(
 
+quiz_questions=(
+  "What function do we use to register exit handlers?"
+  "What is a return<status> from main equivalent to?"
+  "What is the difference between exit() and _exit()?"
+  "In what order does exit() call its exit handlers?"
+  "What happens to I/O streams after calling exit?"
+)
+
+quiz_answers=(
+  "atexit()"
+  "exit(status) from anywhere"
+  "_exit() is a system call"
+  "Reverse"
+  "They are flushed and closed"
 )
